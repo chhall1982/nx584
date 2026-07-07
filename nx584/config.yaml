@@ -4,6 +4,8 @@ version: "1.0.0"
 privileged:
   - SYS_RAWIO
 apparmor: false
+devices:
+  - "/dev/ttyUSB2"
 slug: "nx584"
 init: false
 arch:
