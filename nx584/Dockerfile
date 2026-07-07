@@ -18,6 +18,7 @@ COPY config.ini .
 
 # Copy data for add-on
 COPY run.sh /
+RUN sed -i 's/\r$//' /run.sh
 RUN chmod a+x /run.sh
 
 CMD [ "/run.sh" ]
