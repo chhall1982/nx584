@@ -1,5 +1,4 @@
-ARG BUILD_FROM
-FROM $BUILD_FROM
+FROM alpine:latest
 
 RUN apk add python3 py3-pip git
 
